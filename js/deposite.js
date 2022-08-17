@@ -22,28 +22,36 @@ document.getElementById('btn-deposite').addEventListener('click',function(){
     balanceTotalElement.innerText = currentTotalBalance;
 })
 
+
+
+
+
+
+
+
+
 // widtdraw section starts 
  
-document.getElementById('btn-withdraw').addEventListener('click',function(){
-        const withdrawField = document.getElementById('Withdraw-field');
-        const PreviousWithdrawAmountString = withdrawField.value;
-        const previousWithdrawtAmount = parseFloat(PreviousWithdrawAmountString );
-        withdrawField.value='';
-        console.log(previousWithdrawtAmount);
+// document.getElementById('btn-withdraw').addEventListener('click',function(){
+//         const withdrawField = document.getElementById('Withdraw-field');
+//         const PreviousWithdrawAmountString = withdrawField.value;
+//         const previousWithdrawtAmount = parseFloat(PreviousWithdrawAmountString );
+//         withdrawField.value='';
+//         console.log(previousWithdrawtAmount);
 
-        const withdrawTotalElement = document.getElementById('withdraw-total');
-    const PreviousWithdrawTotalstr = withdrawTotalElement.innerText;
-    const PreviousWithdrawTotal = parseFloat(PreviousWithdrawTotalstr);
-    const currentWithdrawTotal = PreviousWithdrawTotal + previousWithdrawtAmount;
-    withdrawTotalElement.innerText = currentWithdrawTotal;
-    console.log(currentWithdrawTotal);
+//         const withdrawTotalElement = document.getElementById('withdraw-total');
+//     const PreviousWithdrawTotalstr = withdrawTotalElement.innerText;
+//     const PreviousWithdrawTotal = parseFloat(PreviousWithdrawTotalstr);
+//     const currentWithdrawTotal = PreviousWithdrawTotal + previousWithdrawtAmount;
+//     withdrawTotalElement.innerText = currentWithdrawTotal;
+//     console.log(currentWithdrawTotal);
 
-    const balanceTotalElement = document.getElementById('balance-total');
-    const balanceTotalstr = balanceTotalElement.innerText;
-    const PreviousBalanceTotal = parseFloat(balanceTotalstr);
-    const presentTotalBallance = PreviousBalanceTotal - previousWithdrawtAmount;
-    balanceTotalElement.innerText = presentTotalBallance;
-    console.log(presentTotalBallance);
+//     const balanceTotalElement = document.getElementById('balance-total');
+//     const balanceTotalstr = balanceTotalElement.innerText;
+//     const PreviousBalanceTotal = parseFloat(balanceTotalstr);
+//     const presentTotalBallance = PreviousBalanceTotal - previousWithdrawtAmount;
+//     balanceTotalElement.innerText = presentTotalBallance;
+//     console.log(presentTotalBallance);
 
 
-})
+// })
